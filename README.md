@@ -19,8 +19,8 @@ Le programme utilise des Mutex POSIX (`mutex_table`) pour protéger la liste cha
 ### 2-Réseau et détection automatique
 Le serveur utilise la fonction `getifaddrs()` pour identifier dynamiquement les adresses de broadcast des interfaces réseau actives. Cela permet au programme de fonctionner sur différents réseaux sans configuration manuelle. En cas d'échec de la détection, une adresse est définie via la constante `BROADCAST_ADDR`.
 
-### 3-Arrêt propre et gestion de la mémoire
-Afin de permettre un arrêt propre du thread serveur sans blocage, la socket UDP est configurée avec un timeout `SO_RCVTIMEO`. Cela permet au serveur de vérifier régulièrement l'état de la variable `serveur_en_cours` et de libérer ses ressources. Une fonction `viderListe()` est appelée à la fermeture pour libérer toute la mémoire allouée dynamiquement, garantissant aucune fuite mémoire.
+### 3-Arrêt et gestion de la mémoire
+Afin de permettre un arrêt du thread serveur sans blocage, la socket UDP est configurée avec un timeout `SO_RCVTIMEO`. Cela permet au serveur de vérifier régulièrement l'état de la variable `serveur_en_cours` et de libérer ses ressources. Une fonction `viderListe()` est appelée à la fermeture pour libérer toute la mémoire allouée dynamiquement, garantissant aucune fuite mémoire.
 
 ## Instructions de compilation
 - `make` : Compile le projet et génère l'exécutable `biceps`.
