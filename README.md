@@ -8,7 +8,7 @@ Ce TP implémente le protocole BEUIP en utilisant une architecture multi-thread�
 ## Structure du code
 - **biceps.c** : Contient l'interpréteur de commandes et la gestion des commandes internes via un dispatcher. Il gère l'interface utilisateur et la saisie via la bibliothèque readline.
 - **server_thread.c** : Implémentation du serveur UDP tournant dans un thread séparé. Il gère la détection automatique des interfaces réseau (getifaddrs) et la réception des paquets en arrière-plan.
-- **creme.c** : Librairie "Commandes Rapides pour l'Envoi de Messages Evolués". Elle gère la structure de données en liste chaînée (ordonnée alphabétiquement) ainsi que les primitives d'envoi et de réception réseau.
+- **creme.c** : Elle gère la structure de données en liste chaînée (ordonnée alphabétiquement) ainsi que les primitives d'envoi et de réception réseau.
 - **creme.h** : Définitions des structures, des constantes (PORT 9998, BROADCAST_ADDR) et prototypes des fonctions de la librairie.
 
 ## Détails et architecture
