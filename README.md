@@ -1,5 +1,5 @@
-NOM: LAVIEVILLE
-PRENOM: Benoit
+NOM: LAVIEVILLE, SCHAAF
+PRENOM: Benoit, Remy
 
 # Projet Biceps - TP3 OS User 
 
