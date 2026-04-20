@@ -31,4 +31,4 @@ Afin de permettre un arrêt du thread serveur sans blocage, la socket UDP est co
 - Lancement/Arrêt propre du serveur : `beuip start <pseudo>` et `beuip stop`.
 - Annuaire dynamique : `beuip list` affiche les utilisateurs présents au format `IP : pseudo`.
 - Communication : `beuip message <pseudo> <msg>` pour un message privé et `beuip message all <msg>` pour une diffusion générale.
-- Gestion des accès concurrents : Utilisation de Mutex POSIX pour protéger la liste chaînée partagée entre les threads.
+- Gestion des accès concurrents : Utilisation de Mutex POSIX pour protéger la liste chaînée partagée entre les threads. 
